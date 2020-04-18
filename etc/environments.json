@@ -1,0 +1,14 @@
+{
+  "desp_environments": [
+    {
+      "name": "dev",
+      "broker_list": "u060rubyd801.kroger.com:9092,u060rubyd802.kroger.com:9092,u060rubyd803.kroger.com:9092",
+      "scheme_registry": "http://u060rubym401.kroger.com:8082"
+    },
+    {
+      "name": "test",
+      "broker_list": "u060rubyd401.kroger.com:9092,u060rubyd402.kroger.com:9092,u060rubyd403.kroger.com:9092",
+      "scheme_registry": "http://u060rubym401.kroger.com:8081"
+    }
+  ]
+}
