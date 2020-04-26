@@ -1,4 +1,4 @@
-## Simply Python based DESP Consumer
+## Simple Python based DESP Consumer and Producer
 * Handles DESP specific configurations (SSL + SASL)
 * Integrates DESP Schema Registry to Deserialize avro serialized messages
 * Uses the [kafka-python](https://kafka-python.readthedocs.io/en/master/) package
