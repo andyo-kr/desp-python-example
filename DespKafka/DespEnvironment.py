@@ -43,10 +43,6 @@ class DespEnvironment:
             self.current_environment = env
             print(self.current_environment.broker_list)
 
-
-
-
-
 if __name__ == '__main__':
     de: DespEnvironment = DespEnvironment()
     print(de.desp_environments)

@@ -11,6 +11,7 @@
 ```shell script
 > pip3 install -r requirements.txt
 ```
+* rename 'secrets/rename_me.json' to 'secrets.json', and update with your secrets
 * use you topic, user, password in simple-consumer.py
 * run the program
 ```shell script

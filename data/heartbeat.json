@@ -1,0 +1,17 @@
+{
+  "subject": "com.kroger.dcp.event.schema.healthcheck.HeartbeatEvent",
+  "profile": "default",
+  "data": {
+    "eventHeader": {
+      "id": "ce01eac7-a260-4903-ab8a-043199831f99",
+      "time": 1583514429502,
+      "type": "health-check",
+      "source": "ingestion"
+    },
+    "healthChannel": {
+      "sourceLocation": "testIngest",
+      "targetLocation": "testIngest"
+    },
+    "tag": "v2.1"
+  }
+}
