@@ -27,6 +27,11 @@ class AvroSerde:
             self.reader_map[schema_id] = DatumReader(schema)
         return self.reader_map.get(schema_id)
 
+    def get_schema_id(self, payload):
+        raw_bytes = payload[5:] + bytes([0x00])
+        magic, schema_id = struct.unpack('>bI', payload[0:5])
+        return schema_id
+
     def decode_message(self, payload):
         raw_bytes = payload[5:] + bytes([0x00])
         magic, schema_id = struct.unpack('>bI', payload[0:5])
@@ -45,6 +50,7 @@ class AvroSerde:
         bytes_writer = io.BytesIO()
         encoder = BinaryEncoder(bytes_writer)
         (writer, schema_id) = self.get_writer(subject)
+        print(schema_id)
         writer.write(msg_dict, encoder)
         payload = bytes_writer.getvalue()
         wrapped_message = struct.pack('>bI', 0, schema_id) + payload

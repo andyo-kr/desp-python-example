@@ -7,6 +7,7 @@ from enum import Enum
 class EnvironmentName(Enum):
     TEST = 'test'
     DEV = 'dev'
+    DIG_PROD_CDC = 'dig-prod-cdc'
 
 
 @dataclass_json
@@ -27,13 +28,13 @@ env_file = f"etc/environments.json"
 
 
 class DespEnvironment:
-    def __init__(self):
+    def __init__(self, name: EnvironmentName = EnvironmentName.TEST):
         self.desp_environments = None
         self.current_environment: Environment = None
         with open(env_file, 'r') as file:
             data = file.read()
             self.desp_environments: DespEnvironments = DespEnvironments.from_json(data)
-        self._set_environment(EnvironmentName.TEST)
+        self._set_environment(name)
 
     def _set_environment(self, environment: EnvironmentName):
         env = next((e for e in self.desp_environments.desp_environments if e.name == environment), None)

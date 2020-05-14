@@ -9,6 +9,11 @@
       "name": "test",
       "broker_list": "u060rubyd401.kroger.com:9092,u060rubyd402.kroger.com:9092,u060rubyd403.kroger.com:9092",
       "scheme_registry": "http://u060rubym401.kroger.com:8081"
+    },
+    {
+      "name": "dig-prod-cdc",
+      "broker_list": "u060rubyd101.kroger.com:9092,u060rubyd103.kroger.com:9092,u060rubyd105.kroger.com:9092",
+      "scheme_registry": "http://u060rubym101.kroger.com:8081"
     }
   ]
 }
