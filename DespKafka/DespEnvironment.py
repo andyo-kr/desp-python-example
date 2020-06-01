@@ -8,6 +8,9 @@ class EnvironmentName(Enum):
     TEST = 'test'
     DEV = 'dev'
     DIG_PROD_CDC = 'dig-prod-cdc'
+    DIG_PROD_HDC = 'dig-prod-hdc'
+    DIG_STAGE_CDC = 'dig-stage-cdc'
+    DIG_STAGE_HDC = 'dig-stage-hdc'
 
 
 @dataclass_json

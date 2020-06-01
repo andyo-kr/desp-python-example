@@ -11,8 +11,23 @@
       "scheme_registry": "http://u060rubym401.kroger.com:8081"
     },
     {
+      "name": "dig-stage-cdc",
+      "broker_list": "u060rubyd201.kroger.com:9092,u060rubyd203.kroger.com:9092,u060rubyd205.kroger.com:9092",
+      "scheme_registry": "http://u060rubym201.kroger.com:8081"
+    },
+    {
+      "name": "dig-stage-hdc",
+      "broker_list": "u060rubyd202.kroger.com:9092,u060rubyd204.kroger.com:9092,u060rubyd206.kroger.com:9092",
+      "scheme_registry": "http://u060rubym201.kroger.com:8081"
+    },
+    {
       "name": "dig-prod-cdc",
       "broker_list": "u060rubyd101.kroger.com:9092,u060rubyd103.kroger.com:9092,u060rubyd105.kroger.com:9092",
+      "scheme_registry": "http://u060rubym101.kroger.com:8081"
+    },
+    {
+      "name": "dig-prod-hdc",
+      "broker_list": "u060rubyd102.kroger.com:9092,u060rubyd104.kroger.com:9092,u060rubyd106.kroger.com:9092",
       "scheme_registry": "http://u060rubym101.kroger.com:8081"
     }
   ]
