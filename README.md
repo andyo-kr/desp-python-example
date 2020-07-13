@@ -18,3 +18,11 @@
 > python3 simple-consumer.py
 ```
 
+## Using the py-desp docker image
+If you don't want to install the pydesp environment, you
+can run your python scripts in a dockerized python environment.
+The docker run command is wrapped up in a shell script.
+An example call looks like this:
+```shell script
+> ./py-desp.sh produce_from_json.py -t sandbox -i test-data/INT390.json  
+```
