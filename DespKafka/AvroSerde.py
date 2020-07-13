@@ -32,9 +32,11 @@ class AvroSerde:
         magic, schema_id = struct.unpack('>bI', payload[0:5])
         return schema_id
 
-    def decode_message(self, payload):
+    def decode_message(self, payload, override = None):
         raw_bytes = payload[5:] + bytes([0x00])
         magic, schema_id = struct.unpack('>bI', payload[0:5])
+        if override is not None:
+            schema_id = override
         message_bytes = io.BytesIO(raw_bytes)
         decoder = BinaryDecoder(message_bytes)
         reader = self.get_reader(schema_id)

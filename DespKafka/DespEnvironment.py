@@ -9,6 +9,8 @@ class EnvironmentName(Enum):
     DEV = 'dev'
     DIG_PROD_CDC = 'dig-prod-cdc'
     DIG_PROD_HDC = 'dig-prod-hdc'
+    SC_PROD_CDC = 'sc-prod-cdc'
+    SC_PROD_HDC = 'sc-prod-hdc'
     DIG_STAGE_CDC = 'dig-stage-cdc'
     DIG_STAGE_HDC = 'dig-stage-hdc'
 

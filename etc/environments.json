@@ -29,6 +29,16 @@
       "name": "dig-prod-hdc",
       "broker_list": "u060rubyd102.kroger.com:9092,u060rubyd104.kroger.com:9092,u060rubyd106.kroger.com:9092",
       "scheme_registry": "http://u060rubym101.kroger.com:8081"
+    },
+    {
+      "name": "sc-prod-cdc",
+      "broker_list": "u060jaded101.kroger.com:9092,u060jaded103.kroger.com:9092,u060jaded105.kroger.com:9092",
+      "scheme_registry": "http://u060jadem101.kroger.com:8081"
+    },
+    {
+      "name": "sc-prod-hdc",
+      "broker_list": "u060jaded102.kroger.com:9092,u060jaded104.kroger.com:9092,u060jaded106.kroger.com:9092",
+      "scheme_registry": "http://u060jadem101.kroger.com:8081"
     }
   ]
 }

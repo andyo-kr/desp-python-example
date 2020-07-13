@@ -1,3 +1,4 @@
 secrets/secrets.json
 .idea/*
 etc/ca.pem
+/test-data/

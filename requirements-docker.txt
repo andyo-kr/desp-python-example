@@ -1,0 +1,5 @@
+avro-python3==1.9.2.1
+kafka-python==2.0.1
+dataclasses_json==0.3.8
+confluent_kafka==1.4.0
+requests==2.22.0
