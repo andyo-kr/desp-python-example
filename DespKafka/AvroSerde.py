@@ -24,6 +24,7 @@ class AvroSerde:
             schema = self.schema_registry.get_by_id(schema_id)
             if schema is None:
                 return None
+            print(self.schema_registry.url)
             self.reader_map[schema_id] = DatumReader(schema)
         return self.reader_map.get(schema_id)
 

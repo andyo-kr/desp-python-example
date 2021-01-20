@@ -13,6 +13,8 @@ class EnvironmentName(Enum):
     SC_PROD_HDC = 'sc-prod-hdc'
     DIG_STAGE_CDC = 'dig-stage-cdc'
     DIG_STAGE_HDC = 'dig-stage-hdc'
+    SC_STAGE_CDC = 'sc-stage-cdc'
+    SC_STAGE_HDC = 'sc-stage-hdc'
 
 
 @dataclass_json
