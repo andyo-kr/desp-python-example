@@ -2,3 +2,5 @@ secrets/secrets.json
 .idea/*
 etc/ca.pem
 /test-data/
+data/kroger*
+data/desp*

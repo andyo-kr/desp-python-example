@@ -20,7 +20,3 @@ for reading in reader:
     print(data)
     parsed = avro_serde.decode_message(data)
     print(parsed)
-
-
-    
-    
