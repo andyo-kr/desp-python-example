@@ -5,12 +5,17 @@
 * Uses the [confluent-kafka-python](https://github.com/confluentinc/confluent-kafka-python) primarily for schema registry integration
 * Simple consumer in 15-lines of python code!
 
+### Setting up your local environment for this project
+Getting the environment set up for this is a bit tricky.  We recommend
+following [this guide](https://github.com/krogertechnology/desp-developer-onboarding-kit#setting-up-your-python-development-environment-in-desp)
+installing python, virtual environments, and project packages.  IMPORTANT NOTE: For step 6, as you set up your
+virtual environment, make sure you select python version 3.8, since 
+some packages in this project depend on it.  
+
+One the environment is set up, run any commands from the terminal lauched
+from the IDE as it will have the virtual environment automatically activated.
+
 ### Steps to running your consumer
-* set up a python 3 environment
-* install requirements
-```shell script
-> pip3 install -r requirements.txt
-```
 * rename 'secrets/rename_me.json' to 'secrets.json', and update with your secrets
 * use you topic, user, password in simple-consumer.py
 * run the program
