@@ -1,4 +1,4 @@
-FROM python:3.7.8
+FROM python:latest
 ADD DespKafka /app/DespKafka
 ADD etc /app/etc
 ADD requirements-docker.txt /app/requirements.txt
